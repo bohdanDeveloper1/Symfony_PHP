@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Test Application{% endblock %}</title>
+</head>
+<body>
+<div id="sidebar">
+    {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">List issues</a></li>
+
+            <li><a href="/categories">List of Categories</a></li>
+            <li><a href="/category/add">Add new Category</a></li>
+
+            <li><a href="/productAdd">Add Product</a></li>
+
+            <li><a href="/register">To register</a></li>
+
+
+   {#  localhost/login   помилка коли перехожу по цій адресі #}
+            {% block addons %}{% endblock %}
+        </ul>
+    {% endblock %}
+
+</div>
+
+<div id="content">
+    {% block body %}{% endblock %}
+</div>
+</body>
+</html>

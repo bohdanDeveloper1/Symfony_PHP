@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>
+        <ul>
+            {% for product in products %}
+                <li>{{ product.name }} - {{ product.price }} USD</li>
+            {% endfor %}
+        </ul>
+        Tracker Home Page
+    </h1>
+{% endblock %}
